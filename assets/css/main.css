@@ -208,18 +208,14 @@ body {
 
 .statue-1 {
   position: absolute;
-  top: 50rem;
+  bottom: -15rem;
   left: 5rem;
-}
-
-.statue-1 img {
-  width: 50%;
 }
 
 .statue-2 {
   position: absolute;
-  top: 55rem;
-  left: 150rem;
+  bottom: -7rem;
+  right: 7rem;
 }
 
 .statue-2 img {
@@ -402,5 +398,14 @@ footer {
 
   100% {
     transform: translateX(100%);
+  }
+}
+
+
+
+@media (max-width: 1350px) {
+  .statue-1,  
+  .statue-2  {
+    display: none;
   }
 }
