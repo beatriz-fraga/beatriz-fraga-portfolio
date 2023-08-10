@@ -308,6 +308,22 @@ body {
   left: 120rem;
 }
 
+.back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2.4rem;
+  padding-right: 3rem;
+  color: var(--primary-color);
+}
+
 .clouds {
   position: absolute;
   bottom: 0;
@@ -391,9 +407,9 @@ footer {
   }
 }
 
-@media (max-width: 525px) {
-  #header ul {
-    gap: 2rem;
+@media (max-width: 595px) {
+  #header ul li {
+    display: none;
   }
 }
 
