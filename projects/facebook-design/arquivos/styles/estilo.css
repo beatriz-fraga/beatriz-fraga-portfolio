@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .main {
@@ -29,7 +29,12 @@ header {
   width: 100%;
   padding: 30px 100px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
   align-items: center;
 }
 
@@ -59,8 +64,6 @@ header ul li a:active {
 }
 
 .app {
-  position: absolute;
-  right: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +94,7 @@ header ul li a:active {
 
 .contentBx .text {
   max-width: 800px;
+  text-align: justify;
 }
 
 .contentBx .text h2 {
@@ -180,4 +184,89 @@ header ul li a:active {
 }
 .sci li a:hover {
   color: #2d88ff;
+}
+
+@media (max-width: 1035px) {
+  .contentBx {
+    display: block;
+    margin-block: 100px;
+  }
+  .contentBx .text {
+    margin-bottom: 50px;
+  }
+  .contentBx .imgBx {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .contentBx .imgBx img {
+    margin: 0;
+  }
+  .sci {
+    display: block;
+    position: absolute;
+    bottom: 350px;
+  }
+  .dots {
+    position: absolute;
+    top: 65%;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .contentBx {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main {
+    padding: 0 30px;
+  }
+  header {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contentBx .text h2 {
+    font-size: 5em;
+  }
+  .contentBx .imgBx img {
+    width: 250px;
+  }
+  .sci {
+    left: 16px;
+    top: 67%;
+  }
+  .dots {
+    right: 16px;
+    top: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  .contentBx {
+    margin-top: 170px;
+  }
+  .contentBx .text h2 {
+    font-size: 4em;
+  }
+
+  .contentBx .imgBx img {
+    width: 250px;
+  }
+  .sci {
+    left: 16px;
+    top: 67%;
+  }
+  .dots {
+    right: 16px;
+    top: 70%;
+  }
 }
