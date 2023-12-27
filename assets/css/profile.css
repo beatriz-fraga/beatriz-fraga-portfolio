@@ -1,0 +1,160 @@
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  width: 70rem;
+  max-width: 90%;
+  height: 70rem;
+  max-height: calc(100vh - 9rem - 13rem);
+  background-image: linear-gradient(
+    to bottom,
+    #9f73cd,
+    #aa78cb,
+    #c185ce,
+    #eb9bd6,
+    #fba4d5,
+    #fea6d6,
+    #f9a8d8,
+    #deb4e2,
+    #d0b9e3,
+    #bbc1e8,
+    #a1ccf4,
+    #6fdafc,
+    #97cff5
+  );
+  border: #c98cd4c8 solid 0.2rem;
+  z-index: 1;
+}
+
+.profile-header {
+  background-color: #cec5ff;
+  width: 100%;
+  height: 4rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.profile-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden auto;
+}
+
+.profile-icons ul {
+  display: flex;
+}
+
+.profile-header i {
+  font-size: 3rem;
+  color: var(--secondary-color);
+}
+
+.profile-play-icon i {
+  font-size: 1.6rem;
+}
+
+.profile-bar {
+  width: 100%;
+  max-width: 55rem;
+}
+
+.profile-bar .bar {
+  width: 100%;
+  height: 2rem;
+  background-color: var(--primary-color);
+  border: #c98cd4c8 solid 0.2rem;
+}
+
+.profile-img img {
+  margin: 3rem 0 2rem 0;
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: var(--profile-font-color) solid 0.2rem;
+}
+
+.profile h1 {
+  color: var(--profile-font-color);
+}
+
+.profile hr {
+  width: 50%;
+  margin: 2rem;
+  border: var(--primary-color) solid 0.1rem;
+}
+
+.profile p {
+  padding: 3rem 4rem;
+  text-align: justify;
+  color: var(--profile-font-color);
+  font-size: 1.8rem;
+}
+
+.profile h4 {
+  color: var(--profile-font-color);
+}
+
+.profile-file img {
+  margin-block: 2rem;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.profile-file img:hover {
+  transform: translate(-1rem);
+}
+
+.content {
+  padding: 5rem;
+  overflow: hidden auto;
+  width: 100%;
+}
+
+.content h1 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.links {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.2rem;
+  margin-right: 2rem;
+  text-align: center;
+  overflow: hidden auto;
+}
+
+.links a {
+  color: var(--profile-font-color);
+  font-size: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links img {
+  width: 10rem;
+  color: #000;
+}
+
+.links p {
+  padding: 0;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
